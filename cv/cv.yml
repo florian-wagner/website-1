@@ -1,0 +1,29 @@
+appointments:
+  - start: 2019
+    end: ''
+    title: Lecturer
+    employer: University of Liverpool
+    department: Department of Earth, Ocean and Ecological Sciences
+    school: School of Environmental Sciences
+    country: UK
+  - start: 2018
+    end: ''
+    title: Affiliate Researcher
+    employer: University of Hawai‘i at Mānoa
+    department: Department of Earth Sciences
+    school: School of Ocean and Earth Science and Technology
+    country: USA
+  - start: 2017
+    end: 2018
+    title: Visiting Research Scholar
+    employer: University of Hawai‘i at Mānoa
+    department: Department of Earth Sciences
+    school: School of Ocean and Earth Science and Technology
+    country: USA
+  - start: 2014
+    end: 2018
+    title: Assistant Professor
+    employer: Universidade do Estado do Rio de Janeiro
+    department: Departamento de Geologia Aplicada
+    school: Faculdade de Geologia
+    country: Brazil

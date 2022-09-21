@@ -21,10 +21,21 @@ mastodon: leouieda
 mastodon_server: scicomm.xyz
 linkedin: https://www.linkedin.com/in/uieda
 youtube: https://www.youtube.com/LeonardoUieda
+
+# Academic contact
+email: Leonardo.Uieda@liverpool.ac.uk
 orcid: 0000-0001-6123-9515
 researchgate: https://www.researchgate.net/profile/Leonardo-Uieda
 googlescholar: http://scholar.google.com/citations?user=qfmPrUEAAAAJ
 publons: https://publons.com/a/1328468/
+website_personal: www.leouieda.com
+website_lab: www.compgeolab.org
+address:
+  street1: Jane Herdman Building
+  street2: 4 Brownlow Street
+  city: Liverpool
+  postcode: L69 3GP
+  country: United Kingdom
 
 # Menu
 navigation:
@@ -34,6 +45,8 @@ navigation:
     id: about/index
   - name: Blog
     id: blog/index
+  - name: CV
+    id: cv/index
   - name: Publications
     id: publications/index
   - name: Presentations
