@@ -88,13 +88,13 @@
 
 % Set fonts (requires compilation with xelatex)
 \usepackage{fontspec}
-\setmainfont[%
-  Path = fonts/notoserif/,
-  UprightFont = NotoSerif-Regular,
-  BoldFont = NotoSerif-Bold,
-  ItalicFont = NotoSerif-Italic,
-  Extension = .ttf
-]{NotoSerif}
+%\setmainfont[%
+  %Path = fonts/notoserif/,
+  %UprightFont = NotoSerif-Regular,
+  %BoldFont = NotoSerif-Bold,
+  %ItalicFont = NotoSerif-Italic,
+  %Extension = .ttf
+%]{NotoSerif}
 
 
 
@@ -128,7 +128,7 @@
 }
 \chead{
   \fontsize{9pt}{10pt}\selectfont
-  {{ config.author }}
+  [- config.author -]
   \hspace{0.2cm} -- \hspace{0.2cm}
   Curriculum Vit\ae
 }
@@ -138,7 +138,7 @@
 % Metadata for the PDF output and control of hyperlinks
 \usepackage[colorlinks=true]{hyperref}
 \hypersetup{
-  pdftitle={ {{ config.author }} - Curriculum Vit\ae},
+  pdftitle={ [- config.author -] - Curriculum Vit\ae},
   %pdfauthor={\MyName},
   linkcolor=blue,
   citecolor=blue,
@@ -158,11 +158,11 @@
 \section{Professional Appointments}
 
 \begin{EntriesTable}
-  {% for job in page.cv.appoinments %}
-    \Duration{ {{ job.start }} }{ {{ job.end }} }  &
-    \Appointment{{{ job.title }}}{{{ job.department }}}{{{ job.school }}}{{{ job.employer }}, {{ job.country }}}
+  [# for job in config.appointments #]
+    \Duration{ [- job.start -] }{ [- job.end -] }  &
+    \Appointment{[- job.title -]}{[- job.department -]}{[- job.school -]}{[- job.employer -], [- job.country -]}
   \\
-  {% endfor %}
+  [# endfor #]
 \end{EntriesTable}
 
 \end{document}

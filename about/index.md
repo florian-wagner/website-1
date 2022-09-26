@@ -8,7 +8,7 @@ thumbnail: images/thumbnail/about.png
 template: base.html
 ---
 
-{% from "macros.html" import figure %}
+{% import "macros.html" as macros %}
 
 <section class="mb-5">
 
@@ -30,8 +30,6 @@ Before coming to Liverpool, I was a visiting research scholar at the
 University of Hawaiʻi at Mānoa, where I worked with the
 [Generic Mapping Tools][gmt] team to create [PyGMT][pygmt], a widely-used
 Python library for processing and visualizing geophysical data.
-Prior to Hawaiʻi, I worked for three years as Assistant Professor at the
-Universidade do Estado do Rio de Janeiro, Brazil.
 
 My research and teaching make heavy use of open-source software and computing
 in general to gain insights on the inner workings of the Earth.
@@ -45,7 +43,7 @@ Along with my role at the University of Liverpool, I'm also:
 * Member of the Advisory Council for [EarthArXiv](https://eartharxiv.org/).
 * Fellow of the [Software Sustainability Institute][ssi-fellowship].
 
-{{ figure("../images/teaching-git-at-agu2019.jpg", 'Me teaching git and GitHub at <a href="https://github.com/agu-ossi/2019-agu-oss">AGU2019</a>.', class="mt-4") }}
+{{ macros.figure("../images/teaching-git-at-agu2019.jpg", 'Me teaching git and GitHub at <a href="https://github.com/agu-ossi/2019-agu-oss">AGU2019</a>.', class="mt-4") }}
 
 
 </section>
@@ -97,10 +95,7 @@ template. The source is available from the GitHub repository
 
 ## Education
 
-{% import "macros.html" as macros %}
-
-{# The edu list is defined in about/edu.yml #}
-{% for item in page.edu %}
+{% for item in config.education %}
 
 <div class="mb-3">
 {%- set id = loop.index %}
